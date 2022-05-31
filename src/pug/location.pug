@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel="stylesheet", href='css/location.min.css')
+    body
+        .all
+            include includes/header
+
+            //Adaptive
+            section.adaptive
+                .adaptive-all
+                    .adaptive-all__nav
+                        ul
+                            li
+                                a(href="#") Rus
+                            li
+                                a(href="#") Vanilla
+                            li
+                                a(href="#") Dried
+                            li
+                                a(href="#") investment
+                            li
+                                a(href="#") Plantations
+                            li
+                                a(href="#") Call back
+
+            //Location
+            section.location
+                .location-all
+                    .location-all__map.wow.animate__animated.animate__fadeInLeft.animate__delay-0.5s
+                        img(src="img/map.png", alt="")
+                    .location-all__text
+                        .text-wrapper.wow.animate__animated.animate__fadeInRight.animate__delay-0.5s
+                            .address Maly Prospekt VO, 88 bldg.2
+                            .tel
+                                a(href="tel:+78125556622") +7 812 555 66 22
+
+            include includes/footer
+
+
+        include includes/scripts

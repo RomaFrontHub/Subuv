@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "imports/breakpoints.scss";
+@import "imports/colors.scss";
+@mixin button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $yellow;
+    padding-bottom: 6px;
+    border-bottom: 2px solid $yellow;
+    transition: 1s;
+    &:hover {
+        color: #af8d05;
+    }
+}
+
+//Location
+.location {
+    padding: 0;
+    &-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__text {
+            padding: 0 100px 0 0;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            .text-wrapper {
+                max-width: 381px;
+                .address {
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 49px;
+                    margin-bottom: 33px;
+                    color: #FFFFFF;
+                }
+                .tel {
+                    a {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 170%;
+                        color: #FFFFFF;
+                        &:hover {
+                            color: rgb(124, 124, 124);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1440px) {
+        .location-all {
+            &__map {
+                width: 100%;
+                max-width: 870px;
+                iframe {
+                    width: 100%;
+                    max-width: 870px;
+                }
+            }
+            &__text {
+                padding: 0 50px 0 0;
+                margin-left: 50px;
+                flex: 1;
+            }
+        }
+    }
+    @media (max-width: $lg) {
+        .location-all {
+            &__map {
+                width: 100%;
+                iframe {
+                    width: 100%;
+                }
+            }
+            &__text {
+                padding: 0 50px 0 0;
+                margin-left: 50px;
+            }
+        }
+    }
+    @media (max-width: $md) {
+        .location-all {
+            flex-direction: column;
+            &__map {
+                margin-bottom: 30px;
+                width: 100%;
+                iframe {
+                    width: 100%;
+                }
+            }
+            &__text {
+                padding: 0 25px;
+            }
+        }
+    }
+}

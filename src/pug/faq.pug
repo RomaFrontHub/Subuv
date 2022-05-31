@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel="stylesheet", href="css/faq.min.css")
+    body
+        .all
+            include includes/header
+
+            //Adaptive
+            section.adaptive
+                .adaptive-all
+                    .adaptive-all__nav
+                        ul
+                            li
+                                a(href="#") Rus
+                            li
+                                a(href="#") Vanilla
+                            li
+                                a(href="#") Dried
+                            li
+                                a(href="#") investment
+                            li
+                                a(href="#") Plantations
+                            li
+                                a(href="#") Call back
+
+            //Faq
+            section.faq
+                .faq-all
+                    .faq-all__title FAQ
+                    .faq-all__main
+                        .main-accordion.wow.animate__animated.animate__fadeInLeft.animate__delay-0.5s
+                            .accordion-item
+                                .accordion-item__text
+                                    .accordion Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.?
+                                    .panel-one
+                                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                .accordion-item__icon
+                                    img(src="img/more.svg", alt="").open-acc-one
+
+                            .accordion-item
+                                .accordion-item__text
+                                    .accordion Proin gravida dolor sit amet lacus accumsan et viverra?
+                                    .panel-two
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                                .accordion-item__icon
+                                    img(src="img/more.svg", alt="").open-acc-two
+
+                            .accordion-item
+                                .accordion-item__text
+                                    .accordion Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                                    .panel-three
+                                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                .accordion-item__icon
+                                    img(src="img/more.svg", alt="").open-acc-three
+
+                            .accordion-item
+                                .accordion-item__text
+                                    .accordion Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.?
+                                    .panel-four
+                                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                .accordion-item__icon
+                                    img(src="img/more.svg", alt="").open-acc-four
+                        .main-right.wow.animate__animated.animate__fadeInRight.animate__delay-0.5s
+                            .main-right__wrapper
+                                .text Any other questions?
+                                .button
+                                    a(href="#") Ask a question
+
+            include includes/footer
+
+
+        include includes/scripts

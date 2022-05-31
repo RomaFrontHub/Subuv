@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "imports/breakpoints.scss";
+@import "imports/colors.scss";
+@mixin button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $yellow;
+    padding-bottom: 6px;
+    border-bottom: 2px solid $yellow;
+    transition: 1s;
+    &:hover {
+        color: #af8d05;
+    }
+}
+
+html,
+body {
+    background-color: $back;
+}
+
+.header {
+    background-color: $back;
+}
+
+//Guide
+.guide {
+    background-color: $back;
+    background-image: url(../img/guide.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 0;
+    &-all {
+        .guide-left {
+            &__captions {
+                .guide-button {
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 49px;
+                    color: #FFFFFF;
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                    cursor: auto;
+                    &:hover {
+                        color: #fff!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Extracts
+#extracts-two {
+    padding: 50px 100px 0 100px;
+    @media (max-width: $xl) {
+        padding: 50px 25px 0;
+    }
+}
+
+#guide-one {
+    padding: 0 0 0 100px;
+    @media (max-width: $xl) {
+        padding: 100px 0 0 25px;
+    }
+}
+
+#guide-two {
+    background-image: url(../img/guide-two.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#guide-three {
+    background-image: url(../img/guide-three.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "imports/breakpoints.scss";
+@import "imports/colors.scss";
+@mixin button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $yellow;
+    padding-bottom: 6px;
+    border-bottom: 2px solid $yellow;
+    transition: 1s;
+    &:hover {
+        color: #af8d05;
+    }
+}
+
+//History
+.history {
+    padding: 0;
+    &-all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            padding-top: 50px;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 73px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+        }
+        &__main {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .main-links {
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                padding-left: 100px;
+                &__wrapper {
+                    width: 263px;
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            margin-bottom: 30px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 170%;
+                                color: #FFFFFF;
+                                &:hover {
+                                    color: rgba(124, 124, 124);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-about {
+                padding: 100px 0;
+                background-color: #fff;
+                border-radius: 50px 0 0 50px;
+                .year {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 100px;
+                    margin-bottom: 115px;
+                    &__wrapper {
+                        max-width: 677px;
+                        .title {
+                            font-weight: 700;
+                            font-size: 35px;
+                            line-height: 43px;
+                            color: #1A1A18;
+                            margin-bottom: 20px;
+                        }
+                        .text {
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 170%;
+                            color: #1A1A18;
+                        }
+                    }
+                }
+                .next {
+                    padding-left: 100px;
+                    margin-bottom: 115px;
+                    display: flex;
+                    justify-content: space-between;
+                    &__img {
+                        img {
+                            border-radius: 0 50px 50px 0;
+                            transform: matrix(-1, 0, 0, 1, 0, 0);
+                            max-width: 353px;
+                        }
+                    }
+                    &__desc {
+                        max-width: 353px;
+                        .title {
+                            font-weight: 700;
+                            font-size: 35px;
+                            line-height: 43px;
+                            color: #1A1A18;
+                            margin-bottom: 20px;
+                        }
+                        .text {
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 170%;
+                            color: #1A1A18;
+                        }
+                    }
+                }
+                .virginia {
+                    padding-left: 100px;
+                    background-image: url(../img/back-five.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-bottom: 115px;
+                    height: 647px;
+                    &__text {
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 49px;
+                        max-width: 550px;
+                        color: #1F1F1D;
+                    }
+                }
+                .partners {
+                    padding: 0 100px;
+                    &-list {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $xl) {
+        padding: 0 50px;
+        &-all {
+            &__main {
+                flex-direction: column;
+                .main-links {
+                    padding: 0 25px;
+                    margin-bottom: 50px;
+                    &__wrapper {
+                        ul {
+                            align-items: center;
+                        }
+                    }
+                }
+                .main-about {
+                    border-radius: 50px;
+                    .year {
+                        padding: 0 25px;
+                    }
+                    .next {
+                        padding-left: 50px;
+                        &__img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        &__desc {
+                            margin-right: 35px;
+                        }
+                    }
+                    .virginia {
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        background-size: cover;
+                    }
+                    .partners {
+                        padding: 0 50px;
+                        &-list {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &__item {
+                                margin-right: 10px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $md) {
+        padding: 0;
+        &-all {
+            &__main {
+                flex-direction: column;
+                .main-links {
+                    padding: 0 25px;
+                    margin-bottom: 50px;
+                    &__wrapper {
+                        ul {
+                            align-items: flex-start;
+                        }
+                    }
+                }
+                .main-about {
+                    border-radius: 50px 0 0 50px;
+                    .year {
+                        padding: 0 25px;
+                    }
+                    .next {
+                        padding-left: 0;
+                        flex-direction: column;
+                        &__img {
+                            img {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                        &__desc {
+                            padding: 0 25px;
+                            margin-bottom: 50px;
+                            max-width: 100%;
+                            .text {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .virginia {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        background-size: cover;
+                        height: 500px;
+                        &__text {
+                            font-size: 25px;
+                            line-height: 35px;
+                        }
+                    }
+                    .partners {
+                        padding: 0 25px;
+                        &-list {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &__item {
+                                margin-right: 10px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

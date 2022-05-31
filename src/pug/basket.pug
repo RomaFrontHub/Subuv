@@ -1,0 +1,104 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel="stylesheet", href='css/basket.min.css')
+    body
+        .all
+            include includes/header
+
+            //Adaptive
+            section.adaptive
+                .adaptive-all
+                    .adaptive-all__nav
+                        ul
+                            li
+                                a(href="#") Rus
+                            li
+                                a(href="#") Vanilla
+                            li
+                                a(href="#") Dried
+                            li
+                                a(href="#") investment
+                            li
+                                a(href="#") Plantations
+                            li
+                                a(href="#") Call back
+
+            //Basket
+            section.basket
+                .basket-all
+                    .basket-all__title Basket
+                    .basket-all__main
+                        .main-list.wow.animate__animated.animate__fadeInLeft.animate__delay-0.5s
+                            .main-list__item
+                                .item-img
+                                    img(src="img/item-one.png", alt="")
+                                .item-desc
+                                    .item-desc__title Ugandan Pure Vanilla Extract
+                                    .item-desc__bottom
+                                        .size
+                                            .size__text 25L
+                                            .size__img
+                                                img(src="img/cub.svg", alt="")
+                                        .reviews
+                                            .reviews-likes
+                                                .reviews-likes__text 4.5
+                                                .reviews-likes__img
+                                                    img(src="img/star.svg", alt="")
+                                            .reviews-comments
+                                                .reviews-comments__text 4.5
+                                                .reviews-comments__img
+                                                    img(src="img/comment.svg", alt="")
+                                .item-order
+                                    .item-order__count
+                                        .count-less
+                                            img(src="img/less.svg", alt="")
+                                        .count-amount 1
+                                        .count-more
+                                            img(src="img/more.svg", alt="")
+                                    .item-order__price 230$
+                                .item-trash
+                                    .item-trash__img
+                                        img(src="img/trash.svg", alt="")
+
+                            .main-list__item
+                                .item-img
+                                    img(src="img/item-two.png", alt="")
+                                .item-desc
+                                    .item-desc__title Ugandan Pure Vanilla Extract
+                                    .item-desc__bottom
+                                        .size
+                                            .size__text 25L
+                                            .size__img
+                                                img(src="img/cub.svg", alt="")
+                                        .reviews
+                                            .reviews-likes
+                                                .reviews-likes__text 4.5
+                                                .reviews-likes__img
+                                                    img(src="img/star.svg", alt="")
+                                            .reviews-comments
+                                                .reviews-comments__text 4.5
+                                                .reviews-comments__img
+                                                    img(src="img/comment.svg", alt="")
+                                .item-order
+                                    .item-order__count
+                                        .count-less
+                                            img(src="img/less.svg", alt="")
+                                        .count-amount 1
+                                        .count-more
+                                            img(src="img/more.svg", alt="")
+                                    .item-order__price 230$
+                                .item-trash
+                                    .item-trash__img
+                                        img(src="img/trash.svg", alt="")
+                        .main-summ.wow.animate__animated.animate__fadeInRight.animate__delay-0.5s
+                            .summ-wrapper
+                                .main-summ__title Summ
+                                .main-summ__price $ 8 255
+                                .main-summ__button
+                                    a(href="#") Order
+
+            include includes/footer
+
+
+        include includes/scripts

@@ -1,0 +1,88 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel="stylesheet", href="css/investment.min.css")
+    link(rel="stylesheet", href='css/news-detail.min.css')
+    body
+        .all
+            include includes/header
+
+            //Adaptive
+            section.adaptive
+                .adaptive-all
+                    .adaptive-all__nav
+                        ul
+                            li
+                                a(href="#") Rus
+                            li
+                                a(href="#") Vanilla
+                            li
+                                a(href="#") Dried
+                            li
+                                a(href="#") investment
+                            li
+                                a(href="#") Plantations
+                            li
+                                a(href="#") Call back
+
+            //Investment
+            section.investment.wow.animate__animated.animate__zoomIn.animate__delay-0.5s
+                .investment-all
+                    .investment-all__main
+                        .main-caption
+                            .main-caption__wrapper
+                                .date 09 jan 2022
+                                .title Fun and Easy Ways to Decorate a Cake
+                                .text.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                        .main-back
+                            img(src="img/back-bonus.png", alt="")
+                        .main-block
+                            .main-block__wrapper.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+                        .main-desc
+                            .main-desc__wrapper.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. 
+                        .main-about
+                            .main-about__img
+                                img(src="img/investment.png", alt="")
+                            .main-about__desc
+                                .title Heading 3
+                                .text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                        .main-desc
+                            .main-desc__wrapper.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+                        .hr
+                        .main-news
+                            .news-wrapper
+                                .news-wrapper__blog
+                                    .date 09 jan 2022
+                                    a(href="#") 
+                                        .title Fun and Easy Ways to Decorate a Cake
+                                    .subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                .news-wrapper__blog
+                                    .date 09 jan 2022
+                                    a(href="#") 
+                                        .title Lorem ipsum dolor
+                                    .subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                .news-wrapper__blog
+                                    .date 09 jan 2022
+                                    a(href="#") 
+                                        .title Fun and Easy Ways to Decorate a Cake
+                                    .subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+
+            //Investor
+            section.investor
+                .investor-all
+                    .investor-all__title Become an investor
+                    .investor-all__form
+                        form(action="")
+                            input(type="text", placeholder="Name")
+                            input(type="email", name="", placeholder="Email")
+                            input(type="submit", value="Submit")
+                    .investor-all__text By clicking the submit button, you give your consent to the processing of personal data
+
+            include includes/footer
+
+
+        include includes/scripts

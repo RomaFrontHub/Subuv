@@ -29,7 +29,7 @@ html(lang='en')
             //Product
             section.product
                 .product-all
-                    .product-all__images.wow.animate__animated.animate__fadeInLeft.animate__delay-0.5s
+                    .product-all__images
                         .images-main
                             img(src="img/item-three.png", alt="")
                         .images-else
@@ -37,9 +37,9 @@ html(lang='en')
                                 img(src="img/item-two.png", alt="")
                             a(href="#") 
                                 img(src="img/item-one.png", alt="")
-                    .product-all__info.wow.animate__animated.animate__fadeInRight.animate__delay-0.5s
-                        .info-title Pure Vanilla Extract
-                        .info-reviews
+                    .product-all__info
+                        .info-title#productItem Pure Vanilla Extract
+                        .info-reviews#productItem
                             .reviews-likes
                                 .reviews-likes__text 4.5
                                 .reviews-likes__img
@@ -48,15 +48,15 @@ html(lang='en')
                                 .reviews-comments__text 4.5
                                 .reviews-comments__img
                                     img(src="img/comment.svg", alt="")
-                        .info-desc Combining formulation expertise with substantial knowledge in producing natural ingredients, we bring together science, market insights, and sourcing
-                        .info-wrap
+                        .info-desc#productItem Combining formulation expertise with substantial knowledge in producing natural ingredients, we bring together science, market insights, and sourcing
+                        .info-wrap#productItem
                             .wrap-price 230$
                             .wrap-size
                                 .size__text 25L
                                 .size__img
                                     img(src="img/cub.svg", alt="")
                             .wrap-button Add to cart
-                        .info-delivery
+                        .info-delivery#productItem
                             .delivery-one
                                 .title Delivery
                                 .text Combining formulation expertise with substantial knowledge in producing natural ingredients,
@@ -67,20 +67,20 @@ html(lang='en')
             //Specif
             section.specif
                 .specif-all
-                    .specif-all__side.wow.animate__animated.animate__fadeInLeft.animate__delay-0.5s
-                        .specif-captions
+                    .specif-all__side
+                        .specif-captions#specif-captions
                             .specif-button.specif-button-one.active Description
                             .specif-button.specif-button-two Specifications
                             .specif-button.specif-button-three Sertificates
-                    .specif-all__text.wow.animate__animated.animate__fadeInRight.animate__delay-0.5s
+                    .specif-all__text#specif-text
                         span.
                             Combining formulation expertise with substantial knowledge in producing natural ingredients, we bring together science, market insights, and sourcing For over 90 years, Virginia Dare has worked with our partners to build products delivering preferred taste. As a global provider, we offer services from our headquarters in Brooklyn as well as a full facility in Shanghai.Combining formulation expertise with substantial knowledge in producing natural ingredients, we bring together science, market insights, and sourcing For over 90 years, Virginia Dare has worked with our partners to build products delivering preferred taste. As a global provider, we offer services from our headquarters in Brooklyn as well as a full facility in Shanghai.
 
             //Extracts-two
             section.extracts#extracts-two
-                .extracts-all
-                    .extracts-all__title Popular products
-                    .extracts-all__main.wow.animate__animated.animate__pulse.animate__delay-0.5s
+                .extracts-all#ext-all-one
+                    .extracts-all__title#title-two Popular products
+                    .extracts-all__main#main-two
                         .main-item
                             .main-item__card#item-card
                                 .card-top

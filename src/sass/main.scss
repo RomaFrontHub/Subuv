@@ -34,7 +34,7 @@ header {
 }
 
 .wow {
-    --animate-duration: 1.4s;
+    --animate-duration: 0.5s;
 }
 
 //Header
@@ -447,6 +447,11 @@ header {
             line-height: 171px;
             letter-spacing: 0.1em;
             color: #fff;
+            span {
+                &::after {
+                    content: '+';
+                }
+            }
         }
         &__right {
             display: flex;

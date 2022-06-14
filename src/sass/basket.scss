@@ -161,6 +161,9 @@
                         &__img {
                             img {
                                 cursor: pointer;
+                                &:hover {
+                                    transform: rotate(-15deg);
+                                }
                             }
                         }
                     }
